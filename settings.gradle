@@ -1,0 +1,2 @@
+rootProject.name = 'sheireit'
+include 'sheireit-api', 'sheireit-ui'
