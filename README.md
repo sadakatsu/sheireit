@@ -1,4 +1,5 @@
 # Sheireit
+## Concept
 Sheireit (ʃeɪ'ʁeɪt) is a prototype for an all-in-one tabletop game design tool.  My goal is to make a program that can help a game designer fully prepare a raw idea for game development, hopefully for a smooth and quick process before publishing.  The features I envision the final product having are:
 
 1. A complete GUI for designing virtually every type of tabletop game, using wizards, drag-and-drop diagrams, file attachments for adding visualization for components, and a minimum of text entry.
@@ -21,5 +22,21 @@ My plans for this application are very ambitious.  Sheireit is my attempt to sta
 - save game designs using a simple data format as in goal #3 above
 
 I figure these three features alone would improve on what I have currently found available.  [Vassal](http://www.vassalengine.org/) allows people to create games and play them with people, but the community seems most interested with creating implementations of already published games.  [boardgame.io](https://boardgame.io/) allows programmers to build tabletop games with JavaScript, including OOTB multiplayer servers and AIs, but it does not provide friendly tools for designers who do not know how to program to build their games.  I am impressed by both these offerings, but I also think that Sheireit would be a first step to offering something oriented toward game designers.
+
+## Build Instructions
+This is a fairly high-level overview of these steps.  I might provide more detailed instructions in the future; for now, I am trying to make forward progress  :/
+
+1. If you do not have it already, install JDK 8 or greater on your system.
+2. If you have not already done so, set the `JAVA_HOME` environment variable to the root directory of your JDK installation.  For example, on my system, that is `D:\Program Files\Java\jdk1.8.0_152`.
+3. If you do not already have it, install git.
+4. If you have not already done so, and you are a Windows user, make sure that the directory that holds `git.exe` is on your PATH.  For example, on my system, it is `C:\Program Files\Git\cmd`.
+5. Choose a place on your system to hold Sheireit.
+6. Navigate to that directory in a terminal.
+7. Run `git clone https://github.com/sadakatsu/sheireit.git`.
+8. Enter that directory.
+9. Run `gradlew bootRun`.  The first time you run this, it can take a long time.
+10. Once you see a message like `2018-11-17 15:32:49.950  INFO 12376 --- [           main] c.s.sheireit.SheireitApplication         : Started SheireitApplication in 1.388 seconds (JVM running for 1.735)`, open your browser and navigate to [localhost:8080](http://localhost:8080).
+11. Start using Sheireit!
+
 
 **More material will come as I start committing code.**
